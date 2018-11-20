@@ -9,6 +9,10 @@
 body {
     background-color: #2D2D2D;
     font-family: 'Ubuntu', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    color: #FFFFFF;
 }
 a {
     text-decoration: none;
@@ -18,7 +22,21 @@ span {
     font-size: 20px;
     line-height: 20px;
 }
+#content {
+    width: 80vw;
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+}
+h2 {
 
+}
+h3 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
 /*** LOGIN FORM ***/
 .cms-login-form {
     display: block;
@@ -43,9 +61,84 @@ span {
 .cms-login-form>input::placeholder {
     padding: 10px;
 }
-/*** HOME NAV ***/
+/*** CMS NAV ***/
 nav.topnav {
     width: 20vw;
     height: 100vh;
+    background-color: #ABABAB;
+}
+nav.topnav>ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+nav.topnav>ul>a>div {
+    height: 10vh;
+    width: 100%;
+}
+nav.topnav>ul>a>div:hover {
     background-color: #2D2D2D;
+    color: #FFFFFF;
+}
+nav.topnav>ul>a>div>p {
+    padding: 9%;
+    margin: 0;
+    color: #000000;
+}
+/*** CMS HOME ***/
+
+
+/*** CMS ARTICLE ***/
+.cms-articles {
+    width: 90%;
+    height: 80%;
+    margin: 5% auto;
+    border: 1px solid #ABABAB;
+}
+.cms-articles>div {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.cms-articles>form>div {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-evenly;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.fullrow {
+    border-top: none !important;
+    border-bottom: none !important;
+    width: 90% !important;
+    margin: 2vh auto !important;
+}
+.fullrow>label {
+    width: 30% !important;
+    font-size: 25px;
+}
+.fullrow>input, .fullrow>textarea {
+    width: 70% !important;
+}
+.buttons {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+.button {
+    width: 10vw;
+    border: 1px solid #8D2663;
+    background-color: inherit;
+    color: #FFFFFF;
+}
+.button:hover {
+    background-color: #ABABAB;
+    color: #000000;
+}
+.cms-articles>form {
+    width: 100%;
 }
